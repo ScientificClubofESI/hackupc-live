@@ -30,7 +30,7 @@ export default new Vuex.Store({
       currentTime: Date.now(),
       schedule: Config.schedule,
    },
-   getters: { 
+   getters: {
       countdownStart: (state) => {
          return dateStringToSeconds(state.schedule.countdownStart) + Config.baseTimeOffset;
       },
